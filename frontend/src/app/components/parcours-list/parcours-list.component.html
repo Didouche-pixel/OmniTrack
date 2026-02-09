@@ -1,0 +1,30 @@
+<div class="parcours-container">
+  <h1>Liste des Parcours</h1>
+
+  <!-- Si la liste est vide -->
+  <div *ngIf="parcoursList.length === 0" class="no-data">
+    <p>Aucun parcours disponible</p>
+  </div>
+
+  <!-- Si la liste a des données -->
+  <table *ngIf="parcoursList.length > 0" class="parcours-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type de Parcours</th>
+        <th>Status</th>
+        <th>Canal</th>
+        <th>Date de création</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let parcours of parcoursList">
+        <td>{{ parcours.id }}</td>
+        <td>{{ parcours.journeyType }}</td>
+        <td>{{ parcours.status }}</td>
+        <td>{{ parcours.channel }}</td>
+        <td>{{ parcours.createdAt | date:'dd/MM/yyyy HH:mm' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
