@@ -1,0 +1,55 @@
+.parcours-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  color: #666;
+}
+
+.parcours-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.parcours-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.parcours-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.parcours-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.parcours-table tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.parcours-table tbody tr:last-child td {
+  border-bottom: none;
+}
